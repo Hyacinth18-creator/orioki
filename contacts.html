@@ -1,18 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contacts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hyacinth Onchangu Orioki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        h1 {
+            color: #2f6fd6;
+        }
+        a {
+            text-decoration: none;
+            color: #2f6fd6;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #2f6fd6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #1d4bb7;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>Contact Hyacinth</h1>
+    <h1>Contact Hyacinth</h1>
 
-<p>Email: hyacinth@example.com</p>
-<p>Phone: +254 68 207683</p>
+    <p><strong>Email:</strong> <a href="mailto:hyacinth@example.com">hyacinth@example.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+25468207683">+254 68 207683</a></p>
 
-<br>
-<a href="cv.html">Home</a>
+    <form action="mailto:hyacinth@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <br>
+    <a href="cv.html">Home</a>
 
 </body>
 </html>
